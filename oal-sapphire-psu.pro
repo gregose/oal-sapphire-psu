@@ -1,4 +1,4 @@
-update=Sunday, March 06, 2016 'PMt' 11:47:16 PM
+update=Saturday, August 06, 2016 'PMt' 03:59:20 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,4 +59,3 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/Users/gregose/dev/oal_kicad/ose-audio-labs
-LibName31=libs/switch_dpdt

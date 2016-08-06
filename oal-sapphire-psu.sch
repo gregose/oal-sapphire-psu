@@ -1,0 +1,621 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ose-audio-labs
+LIBS:switch_dpdt
+LIBS:oal-sapphire-rectifier-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TRANSFO_DUAL-DUAL T1
+U 1 1 56DD1423
+P 5525 3925
+F 0 "T1" H 5525 4450 50  0000 C CNN
+F 1 "TALEMA-25VA/12V" H 5550 3350 50  0000 C CNN
+F 2 "ose-audio-labs:TALEMA_70000K_15-25VA" H 5525 4175 50  0001 C CNN
+F 3 "" H 5525 4175 50  0000 C CNN
+	1    5525 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L FUSE F1
+U 1 1 56DD16D4
+P 3600 3475
+F 0 "F1" H 3700 3525 50  0000 C CNN
+F 1 "FUSE" H 3500 3425 50  0000 C CNN
+F 2 "ose-audio-labs:LITTLEFUSE-560-TR5" H 3600 3475 50  0001 C CNN
+F 3 "" H 3600 3475 50  0000 C CNN
+	1    3600 3475
+	1    0    0    -1  
+$EndComp
+Text GLabel 3275 3475 0    60   Input ~ 0
+LINE
+Text GLabel 3450 4425 0    60   Input ~ 0
+NEUTRAL
+Text GLabel 3475 2575 2    60   Output ~ 0
+LINE
+Text GLabel 3475 2375 2    60   Output ~ 0
+NEUTRAL
+Text GLabel 8100 2325 2    60   Input ~ 0
+V+
+Text GLabel 8100 2725 2    60   Input ~ 0
+V-
+Text GLabel 8100 2525 2    60   Input ~ 0
+GROUND
+Text GLabel 8125 4875 2    60   Output ~ 0
+V-
+Text GLabel 8125 3950 2    60   Output ~ 0
+GROUND
+Text GLabel 8125 3025 2    60   Output ~ 0
+V+
+Text GLabel 3925 2475 2    60   Output ~ 0
+PE
+$Comp
+L LED LED1
+U 1 1 56E44DC0
+P 6800 5175
+F 0 "LED1" H 6800 5275 50  0000 C CNN
+F 1 "V+_OK" H 6800 5050 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 6800 5175 50  0001 C CNN
+F 3 "" H 6800 5175 50  0000 C CNN
+	1    6800 5175
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 56E44E46
+P 7150 5175
+F 0 "R1" V 7230 5175 50  0000 C CNN
+F 1 "820R" V 7150 5175 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7080 5175 50  0001 C CNN
+F 3 "" H 7150 5175 50  0000 C CNN
+	1    7150 5175
+	0    1    1    0   
+$EndComp
+Text GLabel 6600 5175 0    60   Input ~ 0
+V+
+Text GLabel 7375 5175 2    60   Output ~ 0
+GROUND
+$Comp
+L LED LED2
+U 1 1 56E4AF62
+P 7100 5575
+F 0 "LED2" H 7100 5675 50  0000 C CNN
+F 1 "V-_OK" H 7100 5450 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 7100 5575 50  0001 C CNN
+F 3 "" H 7100 5575 50  0000 C CNN
+	1    7100 5575
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 56E4AF68
+P 6750 5575
+F 0 "R2" V 6830 5575 50  0000 C CNN
+F 1 "820R" V 6750 5575 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6680 5575 50  0001 C CNN
+F 3 "" H 6750 5575 50  0000 C CNN
+	1    6750 5575
+	0    1    1    0   
+$EndComp
+Text GLabel 6600 5575 0    60   Input ~ 0
+GROUND
+Text GLabel 7375 5575 2    60   Output ~ 0
+V-
+$Comp
+L MOUNTING_HOLE X1
+U 1 1 56E4D771
+P 3550 5175
+F 0 "X1" H 3550 5025 60  0000 C CNN
+F 1 "MOUNTING_HOLE" H 3550 5325 60  0000 C CNN
+F 2 "ose-audio-labs:MOUNTING_HOLE-M3" H 3550 5175 60  0001 C CNN
+F 3 "" H 3550 5175 60  0000 C CNN
+	1    3550 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOUNTING_HOLE X2
+U 1 1 56E4D7CC
+P 4325 5175
+F 0 "X2" H 4325 5025 60  0000 C CNN
+F 1 "MOUNTING_HOLE" H 4325 5325 60  0000 C CNN
+F 2 "ose-audio-labs:MOUNTING_HOLE-M3" H 4325 5175 60  0001 C CNN
+F 3 "" H 4325 5175 60  0000 C CNN
+	1    4325 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOUNTING_HOLE X3
+U 1 1 56E4D82C
+P 3550 5625
+F 0 "X3" H 3550 5475 60  0000 C CNN
+F 1 "MOUNTING_HOLE" H 3550 5775 60  0000 C CNN
+F 2 "ose-audio-labs:MOUNTING_HOLE-M3" H 3550 5625 60  0001 C CNN
+F 3 "" H 3550 5625 60  0000 C CNN
+	1    3550 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOUNTING_HOLE X4
+U 1 1 56E4D896
+P 4325 5625
+F 0 "X4" H 4325 5475 60  0000 C CNN
+F 1 "MOUNTING_HOLE" H 4325 5775 60  0000 C CNN
+F 2 "ose-audio-labs:MOUNTING_HOLE-M3" H 4325 5625 60  0001 C CNN
+F 3 "" H 4325 5625 60  0000 C CNN
+	1    4325 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C9
+U 1 1 56ED933D
+P 7975 3500
+F 0 "C9" H 8000 3600 50  0000 L CNN
+F 1 "4700uF" H 8000 3400 50  0000 L CNN
+F 2 "ose-audio-labs:25V-LYTIC-7.5-5-16mm" H 8013 3350 50  0001 C CNN
+F 3 "" H 7975 3500 50  0000 C CNN
+	1    7975 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C10
+U 1 1 56ED93AA
+P 7975 4400
+F 0 "C10" H 8000 4500 50  0000 L CNN
+F 1 "4700uF" H 8000 4300 50  0000 L CNN
+F 2 "ose-audio-labs:25V-LYTIC-7.5-5-16mm" H 8013 4250 50  0001 C CNN
+F 3 "" H 7975 4400 50  0000 C CNN
+	1    7975 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P1
+U 1 1 579AC1A1
+P 3275 2475
+F 0 "P1" H 3194 2150 50  0000 C CNN
+F 1 "IEC" H 3194 2241 50  0000 C CNN
+F 2 "ose-audio-labs:schurter_gsp1" H 3275 2475 50  0001 C CNN
+F 3 "" H 3275 2475 50  0000 C CNN
+	1    3275 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D1
+U 1 1 579AE1B0
+P 6800 3275
+F 0 "D1" V 6800 3353 50  0000 L CNN
+F 1 "D" V 6845 3353 50  0001 L CNN
+F 2 "ose-audio-labs:DO-221AC_SlimSMA" H 6800 3275 50  0001 C CNN
+F 3 "" H 6800 3275 50  0000 C CNN
+	1    6800 3275
+	0    1    1    0   
+$EndComp
+$Comp
+L D D3
+U 1 1 579AE2A3
+P 7200 3275
+F 0 "D3" V 7200 3353 50  0000 L CNN
+F 1 "D" V 7245 3353 50  0001 L CNN
+F 2 "ose-audio-labs:DO-221AC_SlimSMA" H 7200 3275 50  0001 C CNN
+F 3 "" H 7200 3275 50  0000 C CNN
+	1    7200 3275
+	0    1    1    0   
+$EndComp
+$Comp
+L D D4
+U 1 1 579AE365
+P 7200 3725
+F 0 "D4" V 7200 3803 50  0000 L CNN
+F 1 "D" V 7245 3803 50  0001 L CNN
+F 2 "ose-audio-labs:DO-221AC_SlimSMA" H 7200 3725 50  0001 C CNN
+F 3 "" H 7200 3725 50  0000 C CNN
+	1    7200 3725
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 579AE914
+P 6525 3725
+F 0 "C2" H 6725 3700 50  0000 L CNN
+F 1 "0.1uF" H 6825 3775 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805" H 6525 3725 50  0001 C CNN
+F 3 "" H 6525 3725 50  0000 C CNN
+	1    6525 3725
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 579AEAAB
+P 6525 3275
+F 0 "C1" H 6825 3250 50  0000 R CNN
+F 1 "0.1uF" H 6825 3325 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805" H 6525 3275 50  0001 C CNN
+F 3 "" H 6525 3275 50  0000 C CNN
+	1    6525 3275
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C4
+U 1 1 579AECD8
+P 7475 3725
+F 0 "C4" H 7275 3700 50  0000 L CNN
+F 1 "0.1uF" H 7375 3775 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805" H 7475 3725 50  0001 C CNN
+F 3 "" H 7475 3725 50  0000 C CNN
+	1    7475 3725
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 579AECDE
+P 7475 3275
+F 0 "C3" H 7375 3250 50  0000 R CNN
+F 1 "0.1uF" H 7375 3325 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805" H 7475 3275 50  0001 C CNN
+F 3 "" H 7475 3275 50  0000 C CNN
+	1    7475 3275
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D2
+U 1 1 579AEF7D
+P 6800 3725
+F 0 "D2" V 6800 3803 50  0000 L CNN
+F 1 "D" V 6845 3803 50  0001 L CNN
+F 2 "ose-audio-labs:DO-221AC_SlimSMA" H 6800 3725 50  0001 C CNN
+F 3 "" H 6800 3725 50  0000 C CNN
+	1    6800 3725
+	0    1    1    0   
+$EndComp
+$Comp
+L D D5
+U 1 1 579B155F
+P 6800 4175
+F 0 "D5" V 6800 4253 50  0000 L CNN
+F 1 "D" V 6845 4253 50  0001 L CNN
+F 2 "ose-audio-labs:DO-221AC_SlimSMA" H 6800 4175 50  0001 C CNN
+F 3 "" H 6800 4175 50  0000 C CNN
+	1    6800 4175
+	0    1    1    0   
+$EndComp
+$Comp
+L D D7
+U 1 1 579B1565
+P 7200 4175
+F 0 "D7" V 7200 4253 50  0000 L CNN
+F 1 "D" V 7245 4253 50  0001 L CNN
+F 2 "ose-audio-labs:DO-221AC_SlimSMA" H 7200 4175 50  0001 C CNN
+F 3 "" H 7200 4175 50  0000 C CNN
+	1    7200 4175
+	0    1    1    0   
+$EndComp
+$Comp
+L D D8
+U 1 1 579B156B
+P 7200 4625
+F 0 "D8" V 7200 4703 50  0000 L CNN
+F 1 "D" V 7245 4703 50  0001 L CNN
+F 2 "ose-audio-labs:DO-221AC_SlimSMA" H 7200 4625 50  0001 C CNN
+F 3 "" H 7200 4625 50  0000 C CNN
+	1    7200 4625
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C6
+U 1 1 579B1571
+P 6525 4625
+F 0 "C6" H 6725 4600 50  0000 L CNN
+F 1 "0.1uF" H 6825 4675 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805" H 6525 4625 50  0001 C CNN
+F 3 "" H 6525 4625 50  0000 C CNN
+	1    6525 4625
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C5
+U 1 1 579B1577
+P 6525 4175
+F 0 "C5" H 6825 4150 50  0000 R CNN
+F 1 "0.1uF" H 6825 4225 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805" H 6525 4175 50  0001 C CNN
+F 3 "" H 6525 4175 50  0000 C CNN
+	1    6525 4175
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C8
+U 1 1 579B157D
+P 7475 4625
+F 0 "C8" H 7275 4600 50  0000 L CNN
+F 1 "0.1uF" H 7375 4675 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805" H 7475 4625 50  0001 C CNN
+F 3 "" H 7475 4625 50  0000 C CNN
+	1    7475 4625
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C7
+U 1 1 579B1583
+P 7475 4175
+F 0 "C7" H 7375 4150 50  0000 R CNN
+F 1 "0.1uF" H 7375 4225 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805" H 7475 4175 50  0001 C CNN
+F 3 "" H 7475 4175 50  0000 C CNN
+	1    7475 4175
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D6
+U 1 1 579B1589
+P 6800 4625
+F 0 "D6" V 6800 4703 50  0000 L CNN
+F 1 "D" V 6845 4703 50  0001 L CNN
+F 2 "ose-audio-labs:DO-221AC_SlimSMA" H 6800 4625 50  0001 C CNN
+F 3 "" H 6800 4625 50  0000 C CNN
+	1    6800 4625
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X06 P7
+U 1 1 579B6CB1
+P 7700 2575
+F 0 "P7" H 7619 2100 50  0000 C CNN
+F 1 "OUTPUT" H 7619 2191 50  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_6pol" H 7700 2575 50  0001 C CNN
+F 3 "" H 7700 2575 50  0000 C CNN
+	1    7700 2575
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3350 3475 3275 3475
+Wire Wire Line
+	3475 2475 3925 2475
+Wire Wire Line
+	5925 3475 7200 3475
+Wire Wire Line
+	5925 4425 6800 4425
+Wire Wire Line
+	6525 3125 7475 3125
+Wire Wire Line
+	7475 3125 7475 3175
+Wire Wire Line
+	6525 3125 6525 3175
+Connection ~ 6800 3125
+Connection ~ 7200 3125
+Wire Wire Line
+	6525 3875 7475 3875
+Wire Wire Line
+	6525 3875 6525 3825
+Connection ~ 6800 3875
+Wire Wire Line
+	7475 3875 7475 3825
+Connection ~ 7200 3875
+Wire Wire Line
+	7200 3425 7475 3425
+Wire Wire Line
+	7475 3425 7475 3375
+Wire Wire Line
+	7475 3625 7475 3575
+Wire Wire Line
+	7475 3575 7200 3575
+Wire Wire Line
+	6800 3425 6525 3425
+Wire Wire Line
+	6525 3425 6525 3375
+Wire Wire Line
+	6800 3575 6525 3575
+Wire Wire Line
+	6525 3575 6525 3625
+Wire Wire Line
+	6800 3425 6800 3575
+Wire Wire Line
+	7200 3575 7200 3425
+Wire Wire Line
+	6075 3525 6800 3525
+Connection ~ 6800 3525
+Connection ~ 7200 3475
+Connection ~ 7000 3875
+Connection ~ 7000 3125
+Wire Wire Line
+	6525 4025 7475 4025
+Wire Wire Line
+	7475 4025 7475 4075
+Wire Wire Line
+	6525 4025 6525 4075
+Connection ~ 6800 4025
+Connection ~ 7200 4025
+Wire Wire Line
+	6525 4775 7475 4775
+Wire Wire Line
+	6525 4775 6525 4725
+Connection ~ 6800 4775
+Wire Wire Line
+	7475 4775 7475 4725
+Connection ~ 7200 4775
+Wire Wire Line
+	7200 4325 7475 4325
+Wire Wire Line
+	7475 4325 7475 4275
+Wire Wire Line
+	7475 4525 7475 4475
+Wire Wire Line
+	7475 4475 7200 4475
+Wire Wire Line
+	6800 4325 6525 4325
+Wire Wire Line
+	6525 4325 6525 4275
+Wire Wire Line
+	6800 4475 6525 4475
+Wire Wire Line
+	6525 4475 6525 4525
+Wire Wire Line
+	6800 4325 6800 4475
+Wire Wire Line
+	7200 4475 7200 4325
+Connection ~ 6800 4425
+Wire Wire Line
+	6075 4375 7200 4375
+Connection ~ 7200 4375
+Connection ~ 7000 4025
+Wire Wire Line
+	6075 3875 6075 3525
+Wire Wire Line
+	6075 4375 6075 4025
+Wire Wire Line
+	7000 3875 7000 4025
+Wire Wire Line
+	7000 3125 7000 3025
+Wire Wire Line
+	7000 3025 8125 3025
+Wire Wire Line
+	7000 4775 7000 4875
+Wire Wire Line
+	7000 4875 8125 4875
+Connection ~ 7000 4775
+Wire Wire Line
+	7000 3950 8125 3950
+Connection ~ 7000 3950
+Wire Wire Line
+	7975 3350 7975 3025
+Connection ~ 7975 3025
+Wire Wire Line
+	7975 3650 7975 4250
+Connection ~ 7975 3950
+Wire Wire Line
+	7975 4550 7975 4875
+Connection ~ 7975 4875
+Wire Wire Line
+	7900 2325 8100 2325
+Wire Wire Line
+	7975 2325 7975 2425
+Wire Wire Line
+	7975 2425 7900 2425
+Connection ~ 7975 2325
+Wire Wire Line
+	7900 2525 8100 2525
+Wire Wire Line
+	7975 2525 7975 2625
+Wire Wire Line
+	7975 2625 7900 2625
+Connection ~ 7975 2525
+Wire Wire Line
+	7900 2725 8100 2725
+Wire Wire Line
+	7975 2725 7975 2825
+Wire Wire Line
+	7975 2825 7900 2825
+Connection ~ 7975 2725
+Wire Wire Line
+	7300 5175 7375 5175
+Wire Wire Line
+	7375 5575 7300 5575
+Wire Wire Line
+	3450 4425 5125 4425
+Wire Wire Line
+	5000 4025 5125 4025
+Wire Wire Line
+	5125 3875 5000 3875
+Wire Wire Line
+	4350 3475 5125 3475
+Wire Wire Line
+	3850 3475 3975 3475
+$Comp
+L CONN_01X01 P2
+U 1 1 57A57EF5
+P 3975 3275
+F 0 "P2" V 3940 3187 50  0000 R CNN
+F 1 "LINE" V 3849 3187 50  0000 R CNN
+F 2 "ose-audio-labs:FASTON_TAB" H 3975 3275 50  0001 C CNN
+F 3 "" H 3975 3275 50  0000 C CNN
+	1    3975 3275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P6
+U 1 1 57A58547
+P 4350 3275
+F 0 "P6" V 4315 3187 50  0000 R CNN
+F 1 "SWITCHED_LINE" V 4224 3187 50  0000 R CNN
+F 2 "ose-audio-labs:FASTON_TAB" H 4350 3275 50  0001 C CNN
+F 3 "" H 4350 3275 50  0000 C CNN
+	1    4350 3275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P3
+U 1 1 57A58A4F
+P 3975 4225
+F 0 "P3" V 3940 4137 50  0000 R CNN
+F 1 "NEUTRAL" V 3849 4137 50  0000 R CNN
+F 2 "ose-audio-labs:FASTON_TAB" H 3975 4225 50  0001 C CNN
+F 3 "" H 3975 4225 50  0000 C CNN
+	1    3975 4225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P5
+U 1 1 57A58B97
+P 4800 3875
+F 0 "P5" H 4719 3650 50  0000 C CNN
+F 1 "PRIMARY_5" H 4719 3741 50  0000 C CNN
+F 2 "ose-audio-labs:FASTON_TAB" H 4800 3875 50  0001 C CNN
+F 3 "" H 4800 3875 50  0000 C CNN
+	1    4800 3875
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P4
+U 1 1 57A58D71
+P 4800 4025
+F 0 "P4" H 4725 4150 50  0000 C CNN
+F 1 "PRIMARY_4" H 4725 4225 50  0000 C CNN
+F 2 "ose-audio-labs:FASTON_TAB" H 4800 4025 50  0001 C CNN
+F 3 "" H 4800 4025 50  0000 C CNN
+	1    4800 4025
+	-1   0    0    1   
+$EndComp
+Connection ~ 3975 4425
+Wire Wire Line
+	6075 3875 5925 3875
+Wire Wire Line
+	6075 4025 5925 4025
+$EndSCHEMATC
