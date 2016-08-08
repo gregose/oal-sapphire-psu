@@ -29,8 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:ose-audio-labs
-LIBS:switch_dpdt
-LIBS:oal-sapphire-rectifier-cache
+LIBS:oal-sapphire-psu-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -105,7 +104,7 @@ L R R1
 U 1 1 56E44E46
 P 7150 5175
 F 0 "R1" V 7230 5175 50  0000 C CNN
-F 1 "820R" V 7150 5175 50  0000 C CNN
+F 1 "680R" V 7150 5175 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 7080 5175 50  0001 C CNN
 F 3 "" H 7150 5175 50  0000 C CNN
 	1    7150 5175
@@ -131,7 +130,7 @@ L R R2
 U 1 1 56E4AF68
 P 6750 5575
 F 0 "R2" V 6830 5575 50  0000 C CNN
-F 1 "820R" V 6750 5575 50  0000 C CNN
+F 1 "680R" V 6750 5575 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 6680 5575 50  0001 C CNN
 F 3 "" H 6750 5575 50  0000 C CNN
 	1    6750 5575
@@ -400,7 +399,7 @@ U 1 1 579B6CB1
 P 7700 2575
 F 0 "P7" H 7619 2100 50  0000 C CNN
 F 1 "OUTPUT" H 7619 2191 50  0000 C CNN
-F 2 "Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_6pol" H 7700 2575 50  0001 C CNN
+F 2 "ose-audio-labs:TerminalBlock_Pheonix_PT-3.5mm_6pol-Vertical" H 7700 2575 50  0001 C CNN
 F 3 "" H 7700 2575 50  0000 C CNN
 	1    7700 2575
 	-1   0    0    1   
