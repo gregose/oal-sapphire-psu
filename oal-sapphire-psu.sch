@@ -35,10 +35,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Sapphire Unregulated PSU"
+Date "08-10-2016"
+Rev "A"
+Comp "Ose Audio Labs"
 Comment1 ""
 Comment2 ""
 Comment3 ""
